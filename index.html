@@ -3,17 +3,28 @@
 <head>
 <title>FB Convo</title>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="./fbconvo.js"></script>
 </head>
 <body>
 
-<p>
-<textarea id="inputtext" style="width: 500px; height: 200px;" placeholder="Enter in convo text..."></textarea>
-<br></br>
-<button onclick="javascript:processText()">Process</button>
-<br>
-<div id="test"></div>
-</p>
-
+<div class="container-fluid">
+	</br>
+	<textarea class="form-control" rows="3" id="inputtext" placeholder="Enter in convo text..."></textarea>
+	</br>
+	<textarea class="form-control" rows="3" id="test2" placeholder="Process Textbox text will appear here..."></textarea>
+	</br>
+	<p class="text-center">
+	<button class="btn btn-primary btn-lg active" onclick="javascript:processText()">Richtext</button>
+	<button class="btn btn-default btn-lg active" onclick="javascript:processText2()">Plaintext</button>
+	</p>
+	<br>
+	<div class="well well-sm">
+	<p id="test"></p>
+	</div>
+</div>
+	
 </body>
 </html>
